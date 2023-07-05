@@ -4,6 +4,7 @@ function createDomElements(data) {
 
   // Get the current children of the parent element and convert it to an array
   var currentChildren = Array.from(parentElement.children);
+  console.log(currentChildren);
 
   let added = 0, deleted = 0, updated = 0;
   // Process each item in the data array
@@ -68,4 +69,5 @@ window.setInterval(() => {
   }
 
   createDomElements(todos)
-}, 5000)
+}, 1000)
+
